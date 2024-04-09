@@ -1,13 +1,17 @@
-body
-{
-    background-color:aqua;
+body {
+    background-color: aqua;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20px;
 }
 h1{
- color:darkblue;
+    color:darkblue;
 }
 ul{
     background-color:black;
 }
 li{
-    color:aliceblue;
+    color:floralwhite;
 }
