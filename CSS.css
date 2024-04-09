@@ -11,12 +11,13 @@ h1{
     color:whitesmoke;
 }
 ul {
-    background-color: black;
+    background: black;
     margin: 0;
-    padding: 0;
+    padding: 20;
     width:185px;
 }
 ul li {
     color:white;
     margin: 5px;
+    background: #cce5ff;
 }
