@@ -9,9 +9,17 @@ body {
 h1{
     color:darkblue;
 }
-ul{
-    background-color:black;
+ul {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width:185px;
+    list-style-type: none;
 }
-li{
-    color:floralwhite;
+li {
+    color: floralwhite;
+    text-decoration: none;
+    padding: 10.5px 11px;
+    background-color: #005555;
+    display:block;
 }
