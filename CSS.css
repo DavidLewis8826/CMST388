@@ -16,14 +16,10 @@ ul {
     width:185px;
     list-style-type: none;
 }
-li {
+.main_li {
     color: white;
     text-decoration: none;
     padding: 10.5px 11px;
     background-color: black;
     display:block;
-}
-ul li visited{
-    color: yellow;
-   
 }
