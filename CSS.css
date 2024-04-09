@@ -7,7 +7,7 @@ body {
     padding: 20px;
 }
 h1{
-    color:darkblue;
+    color:whitesmoke;
 }
 ul {
     background-color: black;
@@ -20,6 +20,6 @@ li {
     color: floralwhite;
     text-decoration: none;
     padding: 10.5px 11px;
-    background-color: #005555;
+    background-color: black;
     display:block;
 }
