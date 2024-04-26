@@ -14,12 +14,28 @@ function dataupdate () {
       }
     });
   }
-function adddata(array){
+function adddata(){
   const fs = require('fs');
+  const AddArray = [];
 
-  const data = array;
-  
-  fs.appendFile('list.csv', data, (err) => {
+  // Get the input elements
+  const input1 = document.getElementById("login");
+  const input2 = document.getElementById("fname");
+  const input3 = document.getElementById("lname");
+  const input4 = document.getElementById("path");
+  const input5 = document.getElementById("tdate");
+
+  // Get the values of the input elements
+  const value1 = input1.value;
+  const value2 = input2.value;
+  const value3 = input3.value;
+  const value4 = input4.value;
+  const value5 = input5.value;
+  const value6 = "N";
+
+  // Add the values to the array
+  AddArray.push(value1, value2, value3, value4, value5, value6);
+  fs.appendFile('list.csv', AddArray, (err) => {
     if (err) throw err;
     console.log('Data appended to file');
   });
