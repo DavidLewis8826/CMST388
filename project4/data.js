@@ -8,7 +8,7 @@ function demoA () {
       complete : csv => {
         // (B1) GET + RESET HTML TABLE
         var table = document.getElementById("demoA");
-        table.innerHTML = "";
+       
   
         // (B2) DRAW TABLE ROWS
         for (let row of csv.data) {
