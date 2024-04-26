@@ -1,1 +1,53 @@
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+    <title>Project 3 - Home</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="project3.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Project 3 home for David Lewis CMST 386 project. Topics include responsive design and targeting your audience">
+    <meta name="keywords" content="Project 3, David Lewis, responsive design, targeting audience">
+    <meta name="author" content="David Lewis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>CMST 386 - Project 3</h1>
+        <nav>
+            <div class="topnav">
+            <a class="active">Menu</a>
+            <div id="myLinks">
+            <a href="https://cmst386-dlewis218.azurewebsites.net">Home</a>
+            <a href="project3.html">Project 3</a>
+            </div>
+            <a class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </nav>
+    </header>
+    <div class="main">
+        <ul class="breadcrumb">
+            <li><a href="https://cmst386-dlewis218.azurewebsites.net">Home</a></li>
+            <li>Project 3</li>
+        </ul>
+        <div class="flex-container">
+            <div id="CSVTable"></div>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="//jquerycsvtotable.googlecode.com/files/jquery.csvToTable.js"></script>
+            
+            <script>
+            $(function() {
+              $('#CSVTable').CSVToTable('list.csv');
+            });
+            </script>  
+        
+        </div>
+    <button onclick="window.location.href='https://cmst386-dlewis218.azurewebsites.net/project3/preprocessing.html';" class="round">Learn Preprocessing</button>
+    </div>
+    <div class="footer">
+        <p>Author: David Lewis</p>
+    </div>
+</body>
+</html>
