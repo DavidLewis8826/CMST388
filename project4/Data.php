@@ -13,7 +13,7 @@
 <body>
   <h1>CMST 386 - Project 3</h1>
     <div class="flex-container">
-      <div class="center">
+      <div>
       <table> 
         <tr> 
           <th>Login</th> 
