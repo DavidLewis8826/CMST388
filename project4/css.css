@@ -36,10 +36,12 @@ body {
   table {
     width: 50%;
     background-color: azure;
+    margin-left: auto;
+    margin-right: auto;
   }
   table, th, td {
     border: 1px solid;
     padding: 20px;
     text-align: center;
   }
-  tr:hover {background-color:lightblue;}
+  td:hover {background-color:lightblue;}
