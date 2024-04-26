@@ -14,35 +14,20 @@
 <body>
     <header>
         <h1>CMST 386 - Project 3</h1>
-        <nav>
-            <div class="topnav">
-            <a class="active">Menu</a>
-            <div id="myLinks">
-            <a href="https://cmst386-dlewis218.azurewebsites.net">Home</a>
-            <a href="project3.html">Project 3</a>
-            </div>
-            <a class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        </nav>
-    </header>
-    <div class="main">
-        <ul class="breadcrumb">
-            <li><a href="https://cmst386-dlewis218.azurewebsites.net">Home</a></li>
-            <li>Project 3</li>
-        </ul>
+
         <div class="flex-container">
             <div>
                 <?php
                 $file = fopen("list.csv","r");
+                while(! feof($file))
+                {
                 print_r(fgetcsv($file));
+                }
                 fclose($file);
-?>
+                ?>
 
             </div>
         </div>
-    <button onclick="window.location.href='https://cmst386-dlewis218.azurewebsites.net/project3/preprocessing.html';" class="round">Learn Preprocessing</button>
     </div>
     <div class="footer">
         <p>Author: David Lewis</p>
