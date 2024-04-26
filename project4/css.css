@@ -35,6 +35,7 @@ body {
   }
   table {
     width: 50%;
+    background-color: azure;
   }
   table, th, td {
     border: 1px solid;
