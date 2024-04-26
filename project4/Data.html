@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>CSV File to HTML Table Using AJAX jQuery</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $("button").click(function(){
-    $.get( "list.csv", function( CSVdata) {
-      data = $.csv.toArray(CSVdata);
-      console.log(data)
-  });
-  </script>
-      });
-    </script>
   <body>
   <div class="container">
-   <div class="table-responsive">
-    <h1 align="center">CSV File to HTML Table Using AJAX jQuery</h1>
-    <br />
-    <div align="center">
-     <button>Load Data</button>
-    </div>
-    <br />
-    <div id="employee_table">
-    </div>
+    <title>CSV To HTML Table</title>
+    <link rel="stylesheet" href="css.css">
+
+    <!-- (PART A) LOAD CSV LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="1-ajax.js"></script>
+  </head>
+  <body>
+    <!-- (PART B) DEMO TABLE & BUTTON -->
+    <table id="demoA" class="demo"></table>
+    <input type="button" value="list.csv" onclick="demoA()">
    </div>
   </div>
  </body>
