@@ -1,6 +1,6 @@
 function demoA () {
     // (PART A) FETCH CSV FROM SERVER
-    Papa.parse("0-language.csv", {
+    Papa.parse("list.csv", {
       download: true,
       skipEmptyLines: true,
   
