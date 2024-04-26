@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Project 3 - Preprocessing</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="project3.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Project 1 home menu for David Lewis. Talks about search engine, kewords, meta tages, content links, hierarchy.">
+    <meta name="keywords" content="Project 1, David Lewis, search engine, meta tages, content links, hierarchy">
+    <meta name="author" content="David Lewis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>CMST 386 - Project 3</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="subnav">
+                <button class="subnavbtn">Project 3 <i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="project3.html">Home</a>
+                    <a href="preprocessing.html">Preprocessing</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+            <li>Preprocessing</li>
+          </ul>
+        <div class="flex-container">
+        <div>
+        <h2>How to implement preprocessing (client-side vs server-side):</h2>
+        <p>
+            Implementing preprocessing can be done on both the client side and server side. 
+            First, let’s start with the server side, this is done using the Less PHP library. 
+            First, check if the requested CSS file is found. Then, it changes the extension to LESS. 
+            After that, it tries to find the file now with it being a LESS file. The next step is to, 
+            read that file resolving magento_import and changes to LESS @import directives. It 
+            keeps resolving all paths in the LESS files and then is copied to var/view_preprocessed/less. 
+            Lastly, in the PHP LESS compiler, all the sources are passed and results get sent 
+            to pub/static/frontend/<Vendor>/<theme>/<locale>. On the client side, it has a 
+            similar path to the server side however the files are sent to pub/static. 
+            Then, the files are sent to pub/static/frontend/<Vendor>/<theme>/<locale> 
+            directory. LESS files with resolved @magento_import directive. Symlinks to the 
+            root source file that do not have @magento_import. Also, symlinks to all LESS files 
+            imported recursively by the @magento_import and @import directives.
+        </p> 
+        </div>
+        <div>
+        <h2>The Mechanisms Used in LESS:</h2>
+        <p>
+            There are lots of mechanisms used in LESS let’s look at some of them. First is 
+            <b>mixins</b>. Mixins can be viewed almost as a function in most languages. They are a 
+            group of properties in CSS that allow you to use the properties from one class and bring 
+            it to another by including the class name as its properties. <b> Variables</b> in LESS can be 
+            defined using a @ symbol the variable gets its assignment with a colon. <b> Functions</b> 
+            are used to manipulate HTML elements present in the style sheet they are predefined. 
+            <b> Operators</b> are plus, minus, multiply, or divide. They are used in LESS to support 
+            arithmetical equations to save time when you can do some math equations. <b> Nested variables</b> 
+            are a group of CSS properties using properties of one class on to a different 
+            class and it includes the name of the properties.     
+        </p>
+        </div>
+        </div>
+        <button onclick="topFunction()" id="backtotop" title="Go to top">Top</button>
+    </div>
+    <div class="footer">
+        <p>Author: David Lewis</p>
+    </div>
+</body>
+</html>
