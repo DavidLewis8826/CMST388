@@ -2,15 +2,14 @@
 <html>
  <head>
   <title>CSV File to HTML Table Using AJAX jQuery</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
- </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
  <body>
   <div class="container">
    <div class="table-responsive">
     <h1 align="center">CSV File to HTML Table Using AJAX jQuery</h1>
     <br />
     <div align="center">
-     <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
+     <button>Load Data</button>
     </div>
     <br />
     <div id="employee_table">
@@ -20,10 +19,13 @@
  </body>
 </html>
 
+
+ 
+
 <script>
-$(document).ready(function(){
- $('#load_data').click(function(){
-  $.ajax({
+  $(document).ready(function(){
+    $("button").click(function(){
+    $.ajax({
    url:"list.csv",
    dataType:"text",
    success:function(data)
@@ -51,7 +53,7 @@ $(document).ready(function(){
     $('#employee_table').html(table_data);
    }
   });
- });
- 
-});
-</script>
+      });
+    });
+  });
+  </script>
