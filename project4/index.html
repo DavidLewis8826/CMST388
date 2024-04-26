@@ -12,9 +12,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
         <h1>CMST 386 - Project 3</h1>
-
+        <table> 
+            <tr> 
+              <th>Name</th> 
+              <th>Email</th> 
+              <th>Phone</th> 
+            </tr> 
+            <?php 
+              $file = fopen("list.csv", "r"); 
+              while (!feof($file)) { 
+                $row = fgetcsv($file); 
+                if ($row) { 
+                  echo "<tr>"; 
+                  echo "<td>" . $row[0] . "</td>"; 
+                  echo "<td>" . $row[1] . "</td>"; 
+                  echo "<td>" . $row[2] . "</td>"; 
+                  echo "</tr>"; 
+                } 
+              } 
+              fclose($file); 
+            ?> 
+          </table> 
         <div class="flex-container">
             <div>
                 <?php
