@@ -21,9 +21,9 @@
             <a href="https://cmst386-dlewis218.azurewebsites.net">Home</a>
             <a href="project3.html">Project 3</a>
             </div>
-            <a src="project3.js" class="icon" onclick="myFunction()">
+            <script src="project3.js" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
-            </a>
+            </script>
         </div>
         </nav>
     </header>
@@ -44,9 +44,9 @@
             read that file resolving magento_import and changes to LESS @import directives. It 
             keeps resolving all paths in the LESS files and then is copied to var/view_preprocessed/less. 
             Lastly, in the PHP LESS compiler, all the sources are passed and results get sent 
-            to pub/static/frontend/<Vendor>/<theme>/<locale>. On the client side, it has a 
+            to pub/static/frontend/Vendor/theme/locale. On the client side, it has a 
             similar path to the server side however the files are sent to pub/static. 
-            Then, the files are sent to pub/static/frontend/<Vendor>/<theme>/<locale> 
+            Then, the files are sent to pub/static/frontend/Vendor/theme/locale 
             directory. LESS files with resolved @magento_import directive. Symlinks to the 
             root source file that do not have @magento_import. Also, symlinks to all LESS files 
             imported recursively by the @magento_import and @import directives.
