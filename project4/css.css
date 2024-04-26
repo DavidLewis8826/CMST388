@@ -33,6 +33,12 @@ body {
     background-color: azure;
     padding: 20px;
   }
+  table {
+    width: 50%;
+  }
   table, th, td {
     border: 1px solid;
+    padding: 20px;
+    text-align: center;
   }
+  tr:hover {background-color:lightblue;}
