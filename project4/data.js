@@ -14,3 +14,13 @@ function dataupdate () {
       }
     });
   }
+function adddata(array){
+  const fs = require('fs');
+
+  const data = array;
+  
+  fs.appendFile('list.csv', data, (err) => {
+    if (err) throw err;
+    console.log('Data appended to file');
+  });
+}
