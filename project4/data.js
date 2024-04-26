@@ -1,16 +1,9 @@
-function demoA () {
-    // (PART A) FETCH CSV FROM SERVER
+function dataupdate () {
     Papa.parse("list.csv", {
       download: true,
       skipEmptyLines: true,
-  
-      // (PART B) DRAW CSV FILE
       complete : csv => {
-        // (B1) GET + RESET HTML TABLE
-        var table = document.getElementById("demoA");
-       
-  
-        // (B2) DRAW TABLE ROWS
+        var table = document.getElementById("data");
         for (let row of csv.data) {
           let tr = table.insertRow();
           for (let cell of row) {
