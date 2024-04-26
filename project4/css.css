@@ -43,4 +43,4 @@ body {
     padding: 20px;
     text-align: center;
   }
-  td:hover {background-color:lightblue;}
+  tr:hover {background-color:lightblue;}
