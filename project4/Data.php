@@ -17,9 +17,12 @@
       <div>
       <table> 
         <tr> 
-          <th>Name</th> 
-          <th>Email</th> 
-          <th>Phone</th> 
+          <th>Login</th> 
+          <th>First Name</th> 
+          <th>Last Name</th> 
+          <th>Path</th>
+          <th>Training Start Date</th>
+          <th>Has Reached 80 Hours?</th>
           </tr> 
           <?php 
           $file = fopen("list.csv", "r"); 
