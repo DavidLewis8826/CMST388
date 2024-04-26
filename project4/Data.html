@@ -3,7 +3,17 @@
  <head>
   <title>CSV File to HTML Table Using AJAX jQuery</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
- <body>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+    $.get( "list.csv", function( CSVdata) {
+      data = $.csv.toArray(CSVdata);
+      console.log(data)
+  });
+  </script>
+      });
+    </script>
+  <body>
   <div class="container">
    <div class="table-responsive">
     <h1 align="center">CSV File to HTML Table Using AJAX jQuery</h1>
@@ -20,40 +30,3 @@
 </html>
 
 
- 
-
-<script>
-  $(document).ready(function(){
-    $("button").click(function(){
-    $.ajax({
-   url:"list.csv",
-   dataType:"text",
-   success:function(data)
-   {
-    var employee_data = data.split(/\r?\n|\r/);
-    var table_data = '<table class="table table-bordered table-striped">';
-    for(var count = 0; count<employee_data.length; count++)
-    {
-     var cell_data = employee_data[count].split(",");
-     table_data += '<tr>';
-     for(var cell_count=0; cell_count<cell_data.length; cell_count++)
-     {
-      if(count === 0)
-      {
-       table_data += '<th>'+cell_data[cell_count]+'</th>';
-      }
-      else
-      {
-       table_data += '<td>'+cell_data[cell_count]+'</td>';
-      }
-     }
-     table_data += '</tr>';
-    }
-    table_data += '</table>';
-    $('#employee_table').html(table_data);
-   }
-  });
-      });
-    });
-  });
-  </script>
