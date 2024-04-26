@@ -140,7 +140,7 @@ ul.breadcrumb li a:hover {
   flex-direction: column;
 }
 #backtotop {
-  display: display;
+  display:contents;
   position: fixed;
   bottom: 20px;
   right: 30px;
