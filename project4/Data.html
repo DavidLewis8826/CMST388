@@ -9,6 +9,7 @@
     <h1 align="center">CSV File to HTML Table Using AJAX jQuery</h1>
     <br />
     <div align="center">
+      <button type="button" name="load_data" id="load_data" class="btn btn-info">Update Data</button>
     </div>
     <br />
     <div id="employee_table">
@@ -20,6 +21,7 @@
 
 <script>
 $(document).ready(function(){
+  $('#load_data').click(function(){
   $.ajax({
    url:"list.csv",
    dataType:"text",
