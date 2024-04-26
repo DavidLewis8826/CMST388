@@ -12,9 +12,8 @@
 </head>
 <body>
   <h1>CMST 386 - Project 3</h1>
-  <div class="main">
     <div class="flex-container">
-      <div>
+      <div class="center">
       <table> 
         <tr> 
           <th>Login</th> 
@@ -43,7 +42,6 @@
             ?> 
       </table> 
       </div>
-    </div>
     </div>
     <div class="footer">
         <p>Author: David Lewis</p>
