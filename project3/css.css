@@ -8,7 +8,7 @@
   font-weight: bold;
 }
 body {
-  background-color: navy;
+  background-color: #000080;
   color: black;
   padding: 20px;
   display: block;
@@ -19,18 +19,18 @@ body {
 }
 @media only screen and (max-width: 600px) {
   body {
-    background-color: blueviolet;
+    background-color: #800080;
   }
 }
 .footer {
-  color: floralwhite;
+  color: #fffaf0;
   font-family: Roboto;
   font-size: medium;
   margin: auto;
 }
 @media only screen and (max-width: 600px) {
   .footer {
-    color: black;
+    color: #000000;
   }
 }
 .topnav {
@@ -153,3 +153,4 @@ ul.breadcrumb li a:hover {
   padding: 15px;
   font-size: 25px;
 }
+

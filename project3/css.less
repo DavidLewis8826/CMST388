@@ -1,16 +1,18 @@
-
+@body-color: #000080; 
+@text-color: #fffaf0;
 @font-face {
     font-family:Roboto; 
     src: url(Roboto/Roboto-Regular.ttf);
   }
+  
 @font-face {
     font-family:Roboto; 
     src: url(Roboto/Roboto-Bold.ttf);
     font-weight:bold;
 }
 
-    body {
-    background-color:navy;
+body {
+    background-color: @body-color;
     color: black;
     padding: 20px;
     display: block;
@@ -18,25 +20,26 @@
     margin-right: auto;
     width: 50%;
     font-family: Roboto; 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: @body-color + #800000;
     }
-    @media only screen and (min-width: 600px) {
-      body {
-        background-color:blueviolet;
-      }
-    }
+}  
    
-    .footer {
-    color: floralwhite;
+.footer {
+    color: @text-color;
     font-family:Roboto;
     font-size: medium;
     margin: auto;
-    }
-    @media only screen and (min-width: 600px) {
-      .footer {
-        color: black;
-      }
-    } 
+}
 
+@media only screen and (max-width: 600px) {
+    .footer {
+        color:@text-color - #fffaf0;
+    }
+} 
   
 .topnav {
   overflow: hidden;
@@ -47,7 +50,6 @@
 .topnav #myLinks {
   display: none;
 }
-
 
 .topnav a {
   color: white;
@@ -65,24 +67,25 @@
   position: absolute;
 }
 
-
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
- 
 .active {
   background-color:black;
   color: white;
 } 
+
 .main {
     background-color: azure;
     padding: 20px;
 }
+
 h1 {
     color: whitesmoke;
 }
+
 h2 {
     text-decoration: underline;
     margin-left: auto;
@@ -91,6 +94,7 @@ h2 {
     display: block;
     width: 90%;
 }
+
 .center{
     display: block;
     margin-left: auto;
@@ -114,6 +118,7 @@ ol li {
     padding: 5px;
     margin-left: 35px;
     }
+
 .round{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
@@ -130,41 +135,38 @@ ol li {
     box-shadow: 10px 10px 5px lightblue;
 }
 
-
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
     background-color:darkgray;
   }
-  
- 
+   
   ul.breadcrumb li {
     display: inline;
     font-size: 18px;
   }
-  
   
   ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
   }
-  
 
   ul.breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
   }
   
-  
   ul.breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
   }
+
   .flex-container {
     display: flex;
     flex-direction: column;
   }
+
   #backtotop {
     display: display;
     position:fixed;
