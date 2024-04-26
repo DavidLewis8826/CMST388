@@ -33,16 +33,14 @@
             <li>Project 3</li>
         </ul>
         <div class="flex-container">
-            <div id="CSVTable"></div>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            <script src="//jquerycsvtotable.googlecode.com/files/jquery.csvToTable.js"></script>
-            
-            <script>
-            $(function() {
-              $('#CSVTable').CSVToTable('list.csv');
-            });
-            </script>  
-        
+            <div>
+                <?php
+                $file = fopen("list.csv","r");
+                print_r(fgetcsv($file));
+                fclose($file);
+?>
+
+            </div>
         </div>
     <button onclick="window.location.href='https://cmst386-dlewis218.azurewebsites.net/project3/preprocessing.html';" class="round">Learn Preprocessing</button>
     </div>
