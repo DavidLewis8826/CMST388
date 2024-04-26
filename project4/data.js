@@ -7,7 +7,7 @@ function demoA () {
          // (PART B) DRAW CSV FILE
     complete : csv => {
         // (B1) GET + RESET HTML TABLE
-        var table = document.getElementById("demoC");
+        var table = document.getElementById("demoA");
         table.innerHTML = "";
   
         // (B2) DRAW TABLE HEADER
