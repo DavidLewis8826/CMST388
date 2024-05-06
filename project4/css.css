@@ -53,6 +53,15 @@ nav a {
   display: block;
 }
 
+.main {
+  background-color: azure;
+  padding: 20px;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
   h2 {
     text-decoration: underline;
     margin-left: auto;
