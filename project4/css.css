@@ -51,9 +51,7 @@ nav a {
 .subnav:hover .subnav-content {
     display: block;
 }
-  h1 {
-    color: whitesmoke;
-  }
+
   h2 {
     text-decoration: underline;
     margin-left: auto;
