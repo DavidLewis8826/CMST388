@@ -62,28 +62,67 @@ h1 {
   color: whitesmoke;
 }
 
-  h2 {
-    text-decoration: underline;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    display: block;
-    width: 90%;
+h2 {
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: block;
+  width: 90%;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+figcaption {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+p {
+  line-height: 2;
+}
+
+ol {
+  background-color:navy;
+  padding: 20px;
+}
+
+ol li {
+  background-color: slategray;
+  color: floralwhite;
+  padding: 5px;
+  margin-left: 35px;
   }
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 20px;
+
+ul {
+  background: black;
+  margin: 0;
+  padding: 20px;
+  width: 185px;
+}
+
+ul li {
+      color: white;
+      margin: 5px;
+      background: #cce5ff;
   }
-  p {
-    line-height: 2;
-  }
-  .main {
-    background-color: azure;
-    padding: 20px;
-  }
+
+.footer {
+  color: floralwhite;
+  font-family: Arial;
+  font-size: medium;
+  margin: auto;
+}
+
   table {
     width: 50%;
     background-color: azure;
@@ -96,10 +135,4 @@ h1 {
   }
   tr:hover {background-color:lightblue;}
 
-figcaption {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 20px;
-}
+
