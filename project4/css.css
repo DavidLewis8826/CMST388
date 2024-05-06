@@ -123,16 +123,17 @@ ul li {
   margin: auto;
 }
 
-  table {
-    width: 50%;
-    background-color: azure;
-    border: 1px solid;
-  }
-  th, td {
-    border: 1px solid;
-    padding: 20px;
-    text-align: center;
-  }
-  tr:hover {background-color:lightblue;}
+table {
+  width: 50%;
+  background-color: azure;
+  border: 1px solid;
+}
+th, td {
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+}
+tr:hover {background-color:lightblue;}
+
 
 
