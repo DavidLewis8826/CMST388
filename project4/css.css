@@ -122,14 +122,4 @@ ul li {
   font-size: medium;
   margin: auto;
 }
-.data {
-  width: 50%;
-  background-color: azure;
-  border: 1px solid;
-}
-.data th, td {
-  border: 1px solid;
-  padding: 20px;
-  text-align: center;
-}
-.data tr:hover {background-color:lightblue;}
+
