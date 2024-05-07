@@ -7,12 +7,15 @@ function Login() {
     if (y == "1234"){
       if (a == "Data"){
       window.location.replace("https://cmst386-dlewis218.azurewebsites.net/project4/Data.html");
+      return true;
       }
       if (a == "Remove"){
         window.location.replace("https://cmst386-dlewis218.azurewebsites.net/project4/removedata.html");
+        return true;
       }
       if (a == "Add"){
         window.location.replace("https://cmst386-dlewis218.azurewebsites.net/project4/adddata.html");
+        return true;
       }
     }
     alert("All must be filled out");
