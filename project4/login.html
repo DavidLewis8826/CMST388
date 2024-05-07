@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>80 Hour Policy - Login</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="css.css">
+        <script src="data.js"></script>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the login page to access the protected materials on the site. ">
+        <meta name="keywords" content="login, 80 hour policy, 80, hour, policy, access">
+        <meta name="copyright" content="Copyright 2024 by David Lewis">
+        <meta name="robots" content="noindex">
+        <meta name="author" content="David Lewis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <header>
+        <h1>Associates In 80 Hours</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="search.html">Search</a>
+            <a href="how.html">How it Works</a>
+            <a href="InPolicy.html">AAs in Policy</a>
+            <a href="Policy.html">Policy</a>
+            <div class="subnav">
+                <button class="subnavbtn">Login<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="login.html">Log-in</a>
+                    <a href="login.html">Full Data</a>
+                    <a href="login.html">Add</a>
+                    <a href="login.html">Remove</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Login Page</h2>
+        <form id="login">
+            <label for="Username">Username:</label><br>
+            <input type="text" id="Username" name="Username"><br>
+            <label for="Password">Password:</label><br>
+            <input type="text" id="Password" name="Password"><br>
+            <h3>Pick either Data / Add / Remove</h3>
+            <label for="Request">Request:</label><br>
+            <input type="text" id="Request" name="Request"><br><br>
+            <input type="submit" value="Submit" onclick="Login()">
+        </form>
+        </div>    
+        <div class="footer">
+            <p>Author: David Lewis View Privacy Policy <a href="Privacy.html">here</a></p><div id="date"></div>
+        </div>
+</body>
+</html>
