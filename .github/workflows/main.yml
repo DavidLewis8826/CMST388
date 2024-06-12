@@ -1,4 +1,4 @@
-name: Deploy HTML Files to AppService - CMST386
+name: Deploy HTML Files to AppService - CMST388
 on:
   push:
    branches:
@@ -12,6 +12,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v1
         with:
-         app-name: 'CMST385-dlewis218'
+         app-name: 'CMST388-dlewis218'
          slot-name: 'production'
-         publish-profile: ${{ secrets.AppServiceCMST386 }}
+         publish-profile: ${{ secrets.AppServiceCMST388 }}
