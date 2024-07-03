@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="css.css">
+        <script src="validation.js"></script> 
+    </head>
+<body>
+    <h1>Registration Form</h1>
+    <form method="post" enctype="text/plain" name="form" onsubmit="return validateForm()">
+        <Table>
+        <tr><td>First Name:*</td><td> <input type="text" id="fname" placeholder="First Name"></td></tr>
+        <tr><td>Last Name:*</td><td><input type="text" id="lname" placeholder="Last Name"></td></tr>
+        <tr><td>Adress:*</td><td><input type="text" id="address" placeholder="42 Wallaby Way"></td></tr>
+        <tr><td>City:*</td><td><input type="text" id="City" placeholder="Sydney"></td></tr>
+        <tr><td> State:*</td><td>
+            <select id="state" name="state" >
+                <option value="0">--Select--</option>
+                <option value="fl">Florida</option>
+                <option value="ga">Georgia</option>
+                <option value="ala">Alabama</option>
+                <option value="miss">Mississippi</option>
+            </select></td></tr>
+        <tr><td>Zip Code:*</td><td><input type="text" id="zip" placeholder="2000"></td></tr>
+        <tr><td>Phone:*</td><td><input type="text" id="area" placeholder="Area Code"> <input type="text" id="number" placeholder="Phone number"></td></tr>
+        <tr><td>E-mail:*</td><td><input type="text" id="emailData" placeholder="email@email.com"></td></tr>
+        <tr><td>Confirm E-mail:*</td><td><input type="text" id="mailConfirm" placeholder="email@email.com"></td></tr>
+        <tr><td>Meal Preference:*</td><td><input type="radio" id="vegan" name="mealPre" value="vegan"> <label for="vegan">Vegan</label></td></tr>
+        <tr><td>(select one)</td><td><input type="radio" id="vegetarian" name="mealPre" value="vegetarian"> <label for="vegetarian">Vegetarian</label></td></tr>
+        <tr><td></td><td><input type="radio" id="non-vegetarian" name="mealPre" value="non-vegetarian"> <label for="non-vegetarian">Non-Vegetarian</label></td></tr>
+        <tr><td>Contact Method:* </td><td><input type="checkbox" id="phone" name="contact" value="phone"><label for="phone"> Phone</label>
+        <input type="checkbox" id="E-mail" name="contact" value="E-mail"><label for="E-mail">E-mail</label></td></tr>
+        <tr><td>(select more than one)</td><td><input type="checkbox" id="mail" name="contact" value="mail"><label for="mail">Mail</label>
+        <input type="checkbox" id="Linkedln" name="contact" value="Linkedln"><label for="Linkedln">Linkedln</label></td></tr>
+        <tr><td>Comment:</td><td><input type="text area" name="comment" size="50" placeholder="Please add comments here."></td></tr>
+     </Table>
+        <input type="submit" value="Submit"> <input type="reset" value="Reset">
+        </form>
+    </div>     
+</body>
+</html>
+
